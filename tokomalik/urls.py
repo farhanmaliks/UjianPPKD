@@ -23,5 +23,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Ujian.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-handler404 = 'tokobuku.views.custom_404'
